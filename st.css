@@ -1,0 +1,61 @@
+body {
+  background-color: white;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: green;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px #8B00FF;
+}
+
+.counter {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.clicker {
+  cursor: pointer;
+}
+
+.clicker img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.1s;
+}
+
+.clicker img:active {
+  transform: scale(1.1);
+}
+
+.rating {
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+@media (max-width: 768px) {
+  .clicker img {
+    width: 120px;
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+
+  .counter {
+    font-size: 2em;
+  }
+}
